@@ -34,10 +34,15 @@ La clave es usar todas las armas de nuestro arsenal para impresionar al cliente.
 Para la fecha de entrega, los equipos deberán presentar:  
 
 ✅ **Repositorio en GitHub** con el código fuente documentado.
+
 ✅ **Un panel de visualización de datos** en PowerBI/Tableau el cual debe mostrar la información que consideráis importante para la gente de negocio.
+
 ✅ **Notebook en el que habéis hecho el análisis**  Debe estar todo comentado usando las celdas de markdown, con todo el proceso y las conclusiones obtenidas. Pensad que de este análisis saldrá lo que mostréis en el panel de visualizacion.
+
 ✅ **Demo en vivo** mostrando el funcionamiento del panel de visualizacion/dashboard.
+
 ✅ **Presentación técnica**, explicando los objetivos, desarrollo y tecnologías utilizadas.
+
 ✅ **Tablero Kanban** con la gestión del proyecto (Trello, Jira, etc.).  
 
 ---
