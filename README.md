@@ -64,25 +64,35 @@ Para la fecha de entrega, los equipos deberán presentar:
 
 ### 🟢 **Nivel Esencial:**  
 ✅ Análisis exploratorio de datos (EDA) completo con visualizaciones clave que muestren la distribución de las variables, patrones generales, detección de outliers,etc.
+
 ✅ Documentación del análisis en el notebook, bien comentada y estructurada en celdas de markdown, con conclusiones claras. 
+
 ✅ Kanban board mostrando la planificación y organización del proyecto.
+
 ✅ Repositorio Git con ramas bien organizadas y commits limpios y descriptivos.
+
 ✅ Documentación del código y un README en GitHub.  
 
 ### 🟡 **Nivel Medio:**  
 ✅ Panel de visualización de datos funcional en PowerBI/Tableau, que presente la información más relevante.
+
 ✅ Uso de visualizaciones avanzadas con Plotly o Seaborn, incluyendo gráficos interactivos.
+
 ✅ Segmentación del análisis en función de distintas ciudades o grupos de usuarios, mostrando diferencias clave entre ellos.  
 
 
 ### 🟠 **Nivel Avanzado:**  
 ✅ Implementación de un sistema de filtros interactivos en el panel, para que el usuario pueda explorar los datos de forma dinámica.
+
 ✅ Versión dockerizada del panel de visualización que permita fácil despliegue y portabilidad.
+
 ✅ Hipótesis verificadas extraídas de los datos, acompañadas de análisis estadísticos adecuados (p. ej. test de hipótesis o correlaciones) que justifiquen las conclusiones presentadas.
 
 ### 🔴 **Nivel Experto:**  
 ✅ Análisis predictivo o de clustering, utilizando modelos clásicos de machine learning (p. ej. regresión lineal, clustering k-means) para identificar patrones en los datos.
+
 ✅ Integración de datos adicionales (p. ej., datos demográficos o económicos de las ciudades) para enriquecer el análisis.
+
 ✅ Despliegue en un servidor accesible públicamente.  
 
 ---
