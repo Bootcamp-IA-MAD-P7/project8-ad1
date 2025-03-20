@@ -1,6 +1,6 @@
 # 🚀 PROYECTO DATA ANALYST: Análisis y visualización de datos
 
-![Banner Proyectos](https://github.com/user-attachments/assets/15d49b8b-1e44-465c-91d0-fdfca92cf227)
+![DataAnalyst](https://github.com/user-attachments/assets/f9a0c97d-856b-4b33-b448-c20f0deb2979)
 
 ## 📜 Briefing: PROYECTO DATA ANALYST 
 
