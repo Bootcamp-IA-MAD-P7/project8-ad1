@@ -100,13 +100,14 @@ Para la fecha de entrega, los equipos deberán presentar:
 ## 📊 Evaluación  
 
 Se considerarán los siguientes criterios:  
+Competencia:  Aplicar algoritmos de aprendizaje automático según el problema, identificando y resolviendo problemas clásicos de inteligencia artificial:
+✅ Seleccionar las variables que son útiles y las que no lo son.
+✅ Aplicar modelos de clustering.
+✅ Uso de técnicas avanzadas de visualización como heatmaps, pairplots, y 3D visualizations.
+✅ Introducción a estadística para Machine Learning.
 
-✅ **TODO.**  
-✅ **TODO.**  
-✅ **TODO.**  
-✅ **TODO.**  
-✅ **TODO.**  
-✅ **TODO.**  
+Competencia:  Modificar los parámetros y componentes de la inteligencia artificial para mejorar su rendimiento
+✅ Visualización de resultados y métricas.
 
 Más detalles en: [roadmap-mad-ai-p4.coderf5.es](https://roadmap-mad-ai-p4.coderf5.es/)  
 
