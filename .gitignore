@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# Notebooks and local configuration
+.ipynb_checkpoints/
+.env
+
+# Operating systems and editors
+.DS_Store
+Thumbs.db
+
