@@ -6,8 +6,9 @@
 
 ## Situación actual
 
-Python 3.14.5 está instalado como CPython estándar y como variante libre de GIL. No
-existe Conda ni un entorno virtual del proyecto. `.gitignore` ya excluye `.venv/`.
+El entorno `.venv/` utiliza CPython 3.14.5, está excluido de Git y puede recrearse
+desde `requirements.txt`. El checkpoint del entorno se publicó en la rama remota
+con el commit `152f0de`. El siguiente incremento es el inventario técnico.
 
 ## Enfoque propuesto
 
@@ -23,7 +24,7 @@ y se utilizará el entorno para construir el inventario de los seis CSV.
 | `.venv/` | Entorno local no versionado | REQ-001, REQ-002 |
 | `requirements.txt` | Dependencias directas verificadas | REQ-003, REQ-004 |
 | `README.md` | Creación y activación desde Bash | REQ-004, REQ-005 |
-| `scripts/` o `notebooks/` | Inventario técnico reproducible | REQ-006 |
+| `notebooks/01_data_inventory.ipynb` | Inventario técnico explicado y reproducible | REQ-006 |
 
 ## Estrategia de validación
 
@@ -51,5 +52,5 @@ y se utilizará el entorno para construir el inventario de los seis CSV.
 4. Actualizar herramientas de instalación.
 5. Instalar y registrar dependencias mínimas.
 6. Crear un checkpoint y hacer push.
-7. Construir e interpretar el inventario técnico.
-
+7. Construir e interpretar el inventario técnico en un notebook ejecutable de
+   principio a fin, sin modificar los CSV originales.

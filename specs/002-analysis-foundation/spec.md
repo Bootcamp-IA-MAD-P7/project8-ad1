@@ -70,8 +70,9 @@ de desarrollo está formado por una sola persona y utilizará Bash para trabajar
 
 ## Preguntas abiertas
 
-No hay preguntas que bloqueen la creación del entorno. El formato final del inventario
-se decidirá al comenzar la tarjeta #7, después de comprobar los datos con Pandas.
+No hay preguntas bloqueantes. El inventario se conservará en
+`notebooks/01_data_inventory.ipynb` para que el código, sus resultados y la
+interpretación puedan revisarse y ejecutarse de principio a fin.
 
 ## Definition of Done
 
