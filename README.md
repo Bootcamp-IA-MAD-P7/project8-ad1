@@ -44,12 +44,14 @@ dependencias principales están disponibles:
 ```bash
 which python
 python --version
-python -c "import pandas, jupyterlab; print('pandas', pandas.__version__); print('jupyterlab', jupyterlab.__version__)"
+python -c "import pandas, jupyterlab, notebook; print('pandas', pandas.__version__); print('jupyterlab', jupyterlab.__version__); print('notebook', notebook.__version__)"
 ```
 
 `which python` debe apuntar a `.venv/Scripts/python` y la versión debe ser
 Python 3.14.5. Para salir del entorno se utiliza `deactivate`. La carpeta `.venv/`
 es local, está excluida mediante `.gitignore` y no debe subirse al repositorio.
+El paquete `notebook` se conserva como dependencia directa para disponer también
+de la interfaz clásica mediante `python -m jupyter notebook`.
 
 ## 📌 Sobre el proyecto
 

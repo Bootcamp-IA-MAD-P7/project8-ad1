@@ -7,7 +7,8 @@
   - Evidencia: Python 3.14.5; `which python` apunta a `.venv/Scripts/python`;
     `pip` está instalado dentro del entorno y Git ignora `.venv/`.
 - [x] **TASK-003** — Instalar dependencias mínimas. Cubre REQ-003 / AC-003.
-  - Evidencia: Pandas 3.0.5 y JupyterLab 4.6.3 se importan desde `.venv/`.
+  - Evidencia: Pandas 3.0.5, JupyterLab 4.6.3 y Jupyter Notebook 7.6.2 se
+    importan desde `.venv/`.
 - [x] **TASK-004** — Documentar la recreación del entorno. Cubre REQ-004 / AC-004.
   - Evidencia: `requirements.txt` fija las dependencias directas y el README
     documenta creación, activación, instalación, comprobación y desactivación.
@@ -26,7 +27,11 @@
 - 2026-08-27: se confirmó Python 3.14.5 y se eligió el intérprete estándar.
 - 2026-08-27: se adoptó Git Bash como terminal de trabajo.
 - 2026-08-27: se creó y verificó `.venv/` sin añadirlo a Git.
-- 2026-08-27: se instalaron Pandas 3.0.5 y JupyterLab 4.6.3 y se documentó la
-  recreación completa del entorno.
+- 2026-08-27: se instalaron Pandas 3.0.5, JupyterLab 4.6.3 y Jupyter Notebook
+  7.6.2 y se documentó la recreación completa del entorno.
 - 2026-08-27: se publicó el checkpoint reproducible del entorno (`152f0de`).
 - 2026-08-27: se eligió un notebook ejecutable como soporte del inventario técnico.
+- 2026-08-27: el inventario confirmó 220.031 filas, 16 columnas distintas y 13
+  columnas comunes entre las seis ciudades.
+- 2026-08-27: se registraron tres ausencias de esquema y una diferencia de tipo
+  inferido en `neighbourhood_group`, pendiente de contrastar con sus valores nulos.

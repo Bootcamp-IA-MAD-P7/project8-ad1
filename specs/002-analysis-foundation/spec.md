@@ -35,7 +35,8 @@ de desarrollo está formado por una sola persona y utilizará Bash para trabajar
 
 - **REQ-001**: el entorno debe crearse en `.venv/` con el CPython 3.14.5 estándar.
 - **REQ-002**: `.venv/` no debe incluirse en Git.
-- **REQ-003**: Pandas y JupyterLab deben instalarse mediante `pip` dentro del entorno.
+- **REQ-003**: Pandas, JupyterLab y Jupyter Notebook deben instalarse mediante
+  `pip` dentro del entorno.
 - **REQ-004**: las dependencias directas y la versión de Python deben documentarse.
 - **REQ-005**: la activación debe verificarse desde Bash mediante la ruta del intérprete.
 - **REQ-006**: el inventario técnico debe cubrir los seis CSV sin modificarlos.
@@ -44,7 +45,8 @@ de desarrollo está formado por una sola persona y utilizará Bash para trabajar
 
 - **AC-001** (cubre REQ-001): `.venv/` existe y reporta Python 3.14.5.
 - **AC-002** (cubre REQ-002): `git status` no propone archivos internos de `.venv/`.
-- **AC-003** (cubre REQ-003): Python puede importar Pandas y JupyterLab desde `.venv/`.
+- **AC-003** (cubre REQ-003): Python puede importar Pandas, JupyterLab y Jupyter
+  Notebook desde `.venv/`.
 - **AC-004** (cubre REQ-004): existe una declaración mínima de dependencias y el
   README explica cómo crear y activar el entorno desde Bash.
 - **AC-005** (cubre REQ-005): `which python` apunta a `.venv/Scripts/python`.
@@ -57,6 +59,8 @@ de desarrollo está formado por una sola persona y utilizará Bash para trabajar
 - El comando `python` resuelve al CPython estándar de 64 bits instalado en Windows.
 - Pandas dispone de distribución precompilada compatible con CPython 3.14 en Windows.
 - JupyterLab se distribuye como paquete Python independiente de plataforma.
+- Jupyter Notebook se declara directamente para disponer de una interfaz de trabajo
+  explícita y predecible, aunque parte de su infraestructura se solape con JupyterLab.
 - Git Bash está disponible y será la terminal utilizada por la desarrolladora.
 
 ## Riesgos y limitaciones

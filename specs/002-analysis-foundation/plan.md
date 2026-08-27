@@ -14,7 +14,8 @@ con el commit `152f0de`. El siguiente incremento es el inventario técnico.
 
 Usar el módulo estándar `venv` y `pip` desde Git Bash. Crear `.venv/` con el comando
 `python`, comprobar que la activación cambia el intérprete, actualizar las herramientas
-de instalación e incorporar solo Pandas y JupyterLab. Después se documentará el proceso
+de instalación e incorporar Pandas, JupyterLab y Jupyter Notebook. Después se
+documentará el proceso
 y se utilizará el entorno para construir el inventario de los seis CSV.
 
 ## Cambios previstos
@@ -32,7 +33,7 @@ y se utilizará el entorno para construir el inventario de los seis CSV.
 |---|---|---|
 | `python --version` con el entorno activo | Python 3.14.5 | AC-001 |
 | `which python` | Ruta dentro de `.venv/Scripts/` | AC-005 |
-| Importar dependencias | Pandas y JupyterLab disponibles | AC-003 |
+| Importar dependencias | Pandas, JupyterLab y Jupyter Notebook disponibles | AC-003 |
 | `git status --short` | Ningún archivo interno de `.venv/` | AC-002 |
 | Recrear desde documentación | Proceso completo y comprensible | AC-004 |
 | Ejecutar inventario | Seis archivos descritos sin modificación | AC-006 |
