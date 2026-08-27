@@ -1,7 +1,7 @@
 ---
 id: 001
 title: Adquisición y registro de los datos originales
-status: in-progress
+status: done
 owner: desarrolladora del proyecto
 created: 2026-08-27
 updated: 2026-08-27
@@ -102,6 +102,6 @@ resolverán en una especificación posterior de inventario técnico.
 - [x] Se documentaron procedencia y autorización.
 - [x] Se creó el manifiesto de integridad.
 - [x] Se comprobaron tamaños y huellas SHA-256.
-- [ ] Existen `plan.md` y `tasks.md`.
-- [ ] La especificación pasa el validador SDD.
-- [ ] El cambio se revisó y se integró mediante Git.
+- [x] Existen `plan.md` y `tasks.md`.
+- [x] La especificación pasa el validador SDD.
+- [x] El cambio se revisó, se registró en Git y se publicó en la rama remota.

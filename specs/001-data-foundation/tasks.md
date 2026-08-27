@@ -41,13 +41,13 @@
   - Validación: ejecutar `python scripts/validate_specs.py`.
   - Resultado: validación SDD correcta; se revisaron 2 especificaciones.
 
-- [ ] **TASK-007** — Revisar y crear el commit de adquisición de datos.
+- [x] **TASK-007** — Revisar y crear el commit de adquisición de datos.
   Cubre REQ-001, REQ-002, REQ-003, REQ-004, REQ-005, REQ-006 /
   AC-001, AC-002, AC-003, AC-004, AC-005, AC-006, AC-007, AC-008.
   - Dependencias: TASK-006.
   - Validación: revisar archivos preparados y resultado del commit.
-  - Resultado esperado: el commit contiene únicamente datos, documentación y
-    trazabilidad SDD de este incremento.
+  - Resultado: el commit `45d939d` contiene únicamente datos, documentación y
+    trazabilidad SDD; está publicado en `origin/feat/001-data-foundation`.
 
 ## Registro de progreso
 
@@ -56,3 +56,4 @@
 - 2026-08-27: se creó y verificó `data/manifest.csv`.
 - 2026-08-27: se detectó que la adquisición había comenzado sin spec previa.
 - 2026-08-27: se corrigió la desviación antes de crear el commit.
+- 2026-08-27: el incremento se validó y se publicó en la rama remota.

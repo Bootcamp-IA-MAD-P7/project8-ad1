@@ -26,6 +26,21 @@ materiales antes de implementar la funcionalidad.
   (por ejemplo, EDA) sin una petición o especificación que la incluya.
 - Mantener coherencia entre `README.md`, `specs/`, código y tests.
 
+## División del trabajo con Codex
+
+- Codex mantiene y valida automáticamente `spec.md`, `plan.md`, `tasks.md` y las
+  decisiones relacionadas, informando únicamente los cambios y decisiones materiales.
+- La persona desarrolladora concentra la ejecución guiada y el aprendizaje detallado
+  en entorno, ETL, análisis, visualización, estadística y modelado.
+- Las especificaciones se gestionan por fase o incremento coherente, no por cada
+  comando o modificación pequeña.
+- El progreso operativo vive en GitHub Project; `tasks.md` conserva la trazabilidad
+  mínima con requisitos, criterios y evidencia, sin duplicar innecesariamente el tablero.
+- Las revisiones se agrupan en checkpoints verificables en vez de interrumpir después
+  de cada archivo documental.
+- Tras cada resultado pequeño, coherente y validado, proponer un commit y un push a la
+  rama de fase para proteger el trabajo. No hacer `push` sin autorización explícita.
+
 ## Trabajo con datos
 
 - Cada gráfico debe responder una pregunta y terminar con una interpretación.
@@ -52,4 +67,3 @@ Un incremento está terminado cuando cumple sus criterios de aceptación, pasa s
 validaciones, documenta decisiones y limitaciones relevantes, interpreta los
 resultados y deja claro el siguiente paso. La comprensión de la persona
 desarrolladora es un criterio de revisión humana, no una comprobación automatizable.
-
