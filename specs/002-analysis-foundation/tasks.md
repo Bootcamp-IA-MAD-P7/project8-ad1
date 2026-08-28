@@ -16,8 +16,9 @@
   REQ-005 / AC-001 a AC-005, AC-007.
   - Evidencia: validaciones correctas y commit `152f0de` publicado en
     `origin/feat/001-data-foundation`.
-- [ ] **TASK-006** — Generar el inventario de los seis CSV. Cubre REQ-006 / AC-006.
-  - Validación: resultados reproducibles e interpretados para todas las ciudades.
+- [x] **TASK-006** — Generar el inventario de los seis CSV. Cubre REQ-006 / AC-006.
+  - Evidencia: notebook ejecutado con 220.031 registros, 16 columnas distintas,
+    13 comunes, perfil de nulos, consistencia de reseñas y unicidad global de `id`.
 - [ ] **TASK-007** — Validar y publicar el inventario. Cubre REQ-001 a REQ-006 /
   AC-001 a AC-007.
   - Validación: revisión de evidencia, commit y push.
@@ -35,3 +36,9 @@
   columnas comunes entre las seis ciudades.
 - 2026-08-27: se registraron tres ausencias de esquema y una diferencia de tipo
   inferido en `neighbourhood_group`, pendiente de contrastar con sus valores nulos.
+- 2026-08-28: se confirmó que `neighbourhood_group` está completamente vacía en
+  Londres, Sídney y Tokio, y no existe en Milán.
+- 2026-08-28: se detectaron 123 alojamientos de Sídney con reseñas, pero sin fecha
+  ni promedio mensual de reseñas; representan el 0,34 % del dataset de la ciudad.
+- 2026-08-28: no se encontraron filas duplicadas ni identificadores nulos o
+  repetidos en los 220.031 registros; `id` es clave candidata para esta extracción.

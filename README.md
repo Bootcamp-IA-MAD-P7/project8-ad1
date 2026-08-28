@@ -76,6 +76,6 @@ automáticamente todos sus niveles opcionales en requisitos aprobados, en
 
 ## 📍 Estado actual
 
-La infraestructura SDD y el entorno Python reproducible están preparados. El
-siguiente incremento será crear el inventario técnico de los seis CSV antes de
-iniciar su limpieza o análisis exploratorio.
+La infraestructura SDD, el entorno Python reproducible y el inventario técnico
+de los seis CSV están preparados. El siguiente incremento será especificar las
+reglas de limpieza y armonización antes de transformar o concatenar los datos.
