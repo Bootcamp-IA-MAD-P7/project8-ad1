@@ -40,8 +40,8 @@ rangos, consistencia y texto.
 
 ## Secuencia
 
-1. Corregir en las tarjetas #9 y #10 la referencia a la especificación 003.
+1. Confirmar en las tarjetas #9 y #28 la referencia a la especificación 003.
 2. Documentar y revisar las 16 variables.
 3. Validar y publicar el checkpoint de la tarjeta #9.
-4. Reutilizar el inventario y completar la evaluación de calidad de la tarjeta #10.
+4. Reutilizar el inventario y completar la evaluación de calidad de la tarjeta #28.
 5. Priorizar hallazgos, validar y publicar el cierre de la fase.

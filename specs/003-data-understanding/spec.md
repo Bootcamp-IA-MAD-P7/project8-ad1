@@ -16,8 +16,8 @@ de esquema, patrones de nulos y una clave candidata. Antes de limpiar o integrar
 datos es necesario documentar qué representa cada variable y evaluar si sus valores
 son suficientemente fiables para iniciar el EDA.
 
-Esta especificación agrupa las tarjetas #9 y #10 como una fase coherente de
-comprensión de datos. La tarjeta #9 se ejecutará primero y la #10 reutilizará tanto
+Esta especificación agrupa las tarjetas #9 y #28 como una fase coherente de
+comprensión de datos. La tarjeta #9 se ejecutará primero y la #28 reutilizará tanto
 el diccionario como el notebook de inventario.
 
 ## Objetivos
@@ -87,7 +87,7 @@ el diccionario como el notebook de inventario.
 ## Preguntas abiertas
 
 - Confirmar la fuente documental más fiable para las definiciones de las columnas.
-- Determinar durante la tarjeta #10 qué reglas de validez son estables y merecen
+- Determinar durante la tarjeta #28 qué reglas de validez son estables y merecen
   convertirse después en tests automatizados.
 
 ## Definition of Done

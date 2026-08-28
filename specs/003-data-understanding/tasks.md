@@ -1,7 +1,9 @@
 # Tareas: diccionario de variables y evaluación inicial de calidad
 
-- [ ] **TASK-001** — Confirmar las 16 columnas y localizar fuentes de definición.
+- [x] **TASK-001** — Confirmar las 16 columnas y localizar fuentes de definición.
   Cubre REQ-001, REQ-002 / AC-001, AC-002.
+  - Evidencia: 16 columnas confirmadas en el inventario; diccionario técnico y
+    supuestos de Inside Airbnb localizados como fuente secundaria contrastable.
 - [ ] **TASK-002** — Documentar significado, tipo lógico, función, unidad, formato,
   disponibilidad y ambigüedades. Cubre REQ-001 a REQ-003 / AC-001, AC-002.
 - [ ] **TASK-003** — Validar y publicar el diccionario inicial. Cubre REQ-001 a
@@ -16,4 +18,7 @@
 ## Registro de progreso
 
 - 2026-08-28: se abrió la fase 003 a partir del inventario técnico validado.
-- 2026-08-28: se decidió ejecutar primero la tarjeta #9 y mantener la #10 en espera.
+- 2026-08-28: se decidió ejecutar primero la tarjeta #9 y mantener la #28 en espera;
+  la issue #10 fue cerrada y reemplazada para corregir su incorporación al Project.
+- 2026-08-28: se perfilaron `id`, `host_id`, `name` y `host_name` en las seis
+  ciudades y se confirmó la diferencia entre identificadores y etiquetas textuales.
