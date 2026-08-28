@@ -1,7 +1,7 @@
 ---
 id: 002
 title: Entorno reproducible e inventario técnico de datos
-status: in-progress
+status: done
 owner: desarrolladora del proyecto
 created: 2026-08-27
 updated: 2026-08-28
@@ -84,4 +84,4 @@ interpretación puedan revisarse y ejecutarse de principio a fin.
 - [x] Las dependencias mínimas están instaladas y documentadas.
 - [x] El entorno puede recrearse siguiendo el README.
 - [x] El inventario técnico de los seis CSV está generado e interpretado.
-- [ ] Las validaciones pasan y los checkpoints están publicados en la rama remota.
+- [x] Las validaciones pasan y los checkpoints están publicados en la rama remota.

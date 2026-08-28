@@ -19,9 +19,10 @@
 - [x] **TASK-006** — Generar el inventario de los seis CSV. Cubre REQ-006 / AC-006.
   - Evidencia: notebook ejecutado con 220.031 registros, 16 columnas distintas,
     13 comunes, perfil de nulos, consistencia de reseñas y unicidad global de `id`.
-- [ ] **TASK-007** — Validar y publicar el inventario. Cubre REQ-001 a REQ-006 /
+- [x] **TASK-007** — Validar y publicar el inventario. Cubre REQ-001 a REQ-006 /
   AC-001 a AC-007.
-  - Validación: revisión de evidencia, commit y push.
+  - Evidencia: notebook sin errores, controles finales correctos, validador SDD y
+    tests superados; commit `f73aa20` publicado en la rama remota.
 
 ## Registro de progreso
 
@@ -42,3 +43,5 @@
   ni promedio mensual de reseñas; representan el 0,34 % del dataset de la ciudad.
 - 2026-08-28: no se encontraron filas duplicadas ni identificadores nulos o
   repetidos en los 220.031 registros; `id` es clave candidata para esta extracción.
+- 2026-08-28: el inventario se ejecutó de principio a fin, se validó y se publicó
+  mediante el commit `f73aa20`; la especificación quedó completada.
