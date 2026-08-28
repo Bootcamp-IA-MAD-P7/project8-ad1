@@ -4,8 +4,10 @@
   Cubre REQ-001, REQ-002 / AC-001, AC-002.
   - Evidencia: 16 columnas confirmadas en el inventario; diccionario técnico y
     supuestos de Inside Airbnb localizados como fuente secundaria contrastable.
-- [ ] **TASK-002** — Documentar significado, tipo lógico, función, unidad, formato,
+- [x] **TASK-002** — Documentar significado, tipo lógico, función, unidad, formato,
   disponibilidad y ambigüedades. Cubre REQ-001 a REQ-003 / AC-001, AC-002.
+  - Evidencia: `docs/data-dictionary.md` cubre las 16 variables y separa tipos
+    físicos, tipos lógicos, cobertura, fuentes y ambigüedades.
 - [ ] **TASK-003** — Validar y publicar el diccionario inicial. Cubre REQ-001 a
   REQ-003, REQ-006 / AC-001, AC-002, AC-005, AC-006.
 - [ ] **TASK-004** — Completar los controles de calidad todavía no cubiertos por el
@@ -22,3 +24,8 @@
   la issue #10 fue cerrada y reemplazada para corregir su incorporación al Project.
 - 2026-08-28: se perfilaron `id`, `host_id`, `name` y `host_name` en las seis
   ciudades y se confirmó la diferencia entre identificadores y etiquetas textuales.
+- 2026-08-28: se documentaron las variables geográficas y de oferta; se registraron
+  diferencias de cobertura, precisión, moneda y fecha de referencia.
+- 2026-08-28: para reducir trabajo documental repetitivo, las cuatro variables de
+  actividad restantes se completaron reutilizando el inventario y las fuentes ya
+  validadas; el diccionario alcanzó 16 de 16 variables.
