@@ -1,7 +1,7 @@
 ---
 id: 003
 title: Diccionario de variables y evaluación inicial de calidad
-status: approved
+status: done
 owner: desarrolladora del proyecto
 created: 2026-08-28
 updated: 2026-08-28
@@ -92,7 +92,7 @@ el diccionario como el notebook de inventario.
 
 ## Definition of Done
 
-- [ ] Las 16 variables están documentadas y clasificadas con fuentes y ambigüedades.
-- [ ] La calidad inicial de las seis ciudades está evaluada e interpretada.
-- [ ] Los problemas están priorizados sin transformar los datos.
-- [ ] Las validaciones pasan y los checkpoints están publicados.
+- [x] Las 16 variables están documentadas y clasificadas con fuentes y ambigüedades.
+- [x] La calidad inicial de las seis ciudades está evaluada e interpretada.
+- [x] Los problemas están priorizados sin transformar los datos.
+- [x] Las validaciones pasan y los checkpoints están publicados.
