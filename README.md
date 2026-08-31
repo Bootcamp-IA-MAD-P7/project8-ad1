@@ -72,10 +72,14 @@ automáticamente todos sus niveles opcionales en requisitos aprobados, en
 | [`specs/README.md`](specs/README.md) | Convención y ciclo de vida SDD |
 | [`specs/000-sdd-infrastructure/spec.md`](specs/000-sdd-infrastructure/spec.md) | Infraestructura SDD inicial |
 | [`specs/002-analysis-foundation/spec.md`](specs/002-analysis-foundation/spec.md) | Entorno reproducible e inventario técnico |
+| [`specs/003-data-understanding/spec.md`](specs/003-data-understanding/spec.md) | Diccionario y evaluación inicial de calidad |
+| [`specs/004-eda/spec.md`](specs/004-eda/spec.md) | Preguntas de negocio para orientar el EDA |
 | [`AGENTS.md`](AGENTS.md) | Reglas educativas y operativas del repositorio |
 
 ## 📍 Estado actual
 
-La infraestructura SDD, el entorno Python reproducible y el inventario técnico
-de los seis CSV están preparados. El siguiente incremento será especificar las
-reglas de limpieza y armonización antes de transformar o concatenar los datos.
+La infraestructura SDD, el entorno reproducible, el inventario técnico, el
+diccionario de variables, la evaluación inicial de calidad y las preguntas de
+negocio del EDA están definidos. Estas preguntas podrán reformularse con evidencia.
+El siguiente incremento especificará únicamente las transformaciones necesarias
+para comenzar a responderlas de forma comparable y reproducible.
