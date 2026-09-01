@@ -7,8 +7,10 @@
 ## Situación actual
 
 Los seis CSV originales, el inventario técnico, el diccionario, la evaluación de
-calidad y las preguntas de negocio están validados. Existen dos notebooks de soporte,
-pero ninguno realiza todavía el EDA requerido por las tarjetas #12 a #14.
+calidad y las preguntas de negocio están validados. El notebook
+`notebooks/03_exploratory_analysis.ipynb` contiene ya el análisis univariante de #12,
+ejecutado sin errores; permanecen pendientes las relaciones de #13 y la consolidación
+final de #14.
 
 ## Enfoque propuesto
 
@@ -18,17 +20,19 @@ breve. Después se añadirán únicamente las relaciones y segmentos que puedan 
 las conclusiones. Finalmente se reorganizarán y depurarán los outputs para obtener el
 notebook entregable.
 
-Para #12, cada variable comenzará con una pregunta y un contrato visual mínimo:
+Para #12, cada variable seleccionada comenzará con una pregunta y un contrato visual
+mínimo. Las dimensiones cuyo valor depende de una relación o segmento se reservan
+para #13:
 
 | Tipo o variable | Pregunta inicial | Evidencia prevista |
 |---|---|---|
 | Ciudad y `room_type` | ¿Cómo se compone la oferta? | Conteos, porcentajes y barras ordenadas |
-| `neighbourhood` | ¿Qué zonas concentran la oferta local? | Cardinalidad y top de barrios con denominador |
+| `neighbourhood` (#13) | ¿Qué zonas concentran la oferta local? | Top de barrios dentro de cada ciudad y con denominador |
 | `price` | ¿Cuál es el nivel, dispersión y asimetría del precio dentro de cada ciudad? | Mediana, cuartiles, histograma y vista de extremos |
 | `minimum_nights` | ¿Qué restricciones son habituales y cuáles son excepcionales? | Mediana, percentiles, bandas e histograma |
-| Variables de reseñas | ¿Cómo se distribuye la actividad observada? | Ceros, mediana, percentiles y distribución |
-| `availability_365` | ¿Cómo se distribuye la disponibilidad publicada donde existe? | Resumen e histograma por ciudad |
-| Conteo de anuncios del anfitrión | ¿Qué indica la distribución sobre concentración de oferta? | Mediana, percentiles y cola de la distribución |
+| Variables de reseñas | ¿Qué cobertura y dispersión tienen antes de usarlas como proxy? | Ceros, ausencias, mediana y percentiles; relaciones en #13 |
+| `availability_365` (#13) | ¿Cómo se relaciona la disponibilidad publicada con los segmentos donde existe? | Resumen condicionado por ciudad y segmento |
+| Conteo de anuncios del anfitrión (#13) | ¿Qué indica su relación con la oferta sobre posible concentración? | Distribución y segmentos dentro de su cobertura |
 
 Los histogramas mostrarán forma; los boxplots se utilizarán solo cuando aporten una
 comparación de dispersión. Los gráficos categóricos usarán barras, y las tablas se

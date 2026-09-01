@@ -4,7 +4,7 @@ title: Análisis exploratorio esencial
 status: in-progress
 owner: desarrolladora del proyecto
 created: 2026-08-31
-updated: 2026-08-31
+updated: 2026-09-01
 ---
 
 # Especificación: análisis exploratorio esencial
@@ -91,12 +91,16 @@ como las correcciones de datos no justificadas.
   metadato derivado del archivo de origen.
 - La preparación inicial podrá construir una vista conjunta en memoria, conservando
   como nulas las columnas ausentes y sin generar todavía un dataset procesado.
-- Las variables numéricas principales de #12 son `price`, `minimum_nights`,
-  `number_of_reviews` y `reviews_per_month`.
-- `availability_365` y `calculated_host_listings_count` se analizarán únicamente en
-  las ciudades donde existen.
-- Las categóricas principales son ciudad y `room_type`; `neighbourhood` se resumirá
-  con su cardinalidad y categorías dominantes sin ocultar el denominador.
+- Las variables numéricas principales de #12 son `price` y `minimum_nights`.
+  `number_of_reviews` y `reviews_per_month` se resumirán únicamente para evaluar su
+  cobertura y dispersión; su utilidad para negocio se estudiará en #13 al
+  relacionarlas con los segmentos de oferta.
+- `availability_365` y `calculated_host_listings_count` se analizarán en #13,
+  únicamente en las ciudades donde existen, porque aisladas no representan demanda,
+  ocupación ni concentración efectiva.
+- Las categóricas principales de #12 son ciudad y `room_type`. Debido a su alta
+  cardinalidad y distinta granularidad, `neighbourhood` se analizará en #13 dentro
+  de cada ciudad y con un denominador explícito.
 - `last_review` podrá analizarse después de convertir sus formatos de forma explícita,
   pero no se calculará recencia contra una fecha de extracción desconocida.
 - `id`, `host_id`, nombres y coordenadas se utilizarán como claves o dimensiones
@@ -121,7 +125,7 @@ si un resumen demuestra que una variable no aporta evidencia a las preguntas P1.
 
 ## Definition of Done
 
-- [ ] La tarjeta #12 está completada, interpretada y publicada.
+- [x] La tarjeta #12 está completada, interpretada y publicada.
 - [ ] La tarjeta #13 está completada, interpretada y publicada.
 - [ ] La tarjeta #14 entrega el notebook consolidado y reproducible.
 - [ ] Las preguntas reformuladas y limitaciones están documentadas.
