@@ -1,7 +1,7 @@
 ---
 id: 005
 title: Análisis exploratorio esencial
-status: approved
+status: in-progress
 owner: desarrolladora del proyecto
 created: 2026-08-31
 updated: 2026-08-31
