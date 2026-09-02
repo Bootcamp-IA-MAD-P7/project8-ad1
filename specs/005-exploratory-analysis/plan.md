@@ -8,9 +8,9 @@
 
 Los seis CSV originales, el inventario técnico, el diccionario, la evaluación de
 calidad y las preguntas de negocio están validados. El notebook
-`notebooks/03_exploratory_analysis.ipynb` contiene ya el análisis univariante de #12,
-ejecutado sin errores; permanecen pendientes las relaciones de #13 y la consolidación
-final de #14.
+`notebooks/03_exploratory_analysis.ipynb` contiene los análisis univariante y
+relacional de #12 y #13, ejecutados sin errores. Solo permanece pendiente la
+consolidación final de #14.
 
 ## Enfoque propuesto
 

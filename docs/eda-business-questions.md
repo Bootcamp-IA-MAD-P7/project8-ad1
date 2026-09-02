@@ -79,3 +79,4 @@ volverá a `draft` o se abrirá un incremento nuevo.
 | Fecha | Pregunta | Estado | Evidencia y decisión | Impacto |
 |---|---|---|---|---|
 | 2026-08-31 | Pregunta principal | activa | Se adopta como hilo conductor inicial, con revisión permitida durante el EDA. | Ninguno; abre la fase de análisis. |
+| 2026-09-02 | Pregunta principal | reformulada | El análisis relacional mostró que “posicionamiento interesante” necesita una referencia explícita. Se define un candidato exploratorio como un segmento de ciudad, barrio y tipo con al menos 50 anuncios, actividad mediana superior y precio mediano no superior a los de su mismo tipo dentro de la ciudad. | La selección de #13 es reproducible, pero no se interpreta como demanda, rentabilidad ni recomendación de inversión. |

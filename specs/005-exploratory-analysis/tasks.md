@@ -24,7 +24,7 @@
   AC-003, AC-006 a AC-008.
   - Dependencias: TASK-003, TASK-004.
   - Validación: notebook ejecutado, preguntas revisadas, hashes, SDD y tests correctos.
-- [ ] **TASK-006** — Analizar relaciones, segmentos, confusores y anomalías para #13.
+- [x] **TASK-006** — Analizar relaciones, segmentos, confusores y anomalías para #13.
   Cubre REQ-005, REQ-009, REQ-010 / AC-004, AC-006, AC-007.
   - Dependencias: TASK-005.
   - Validación: cada relación responde una pregunta y separa asociación de causalidad.
@@ -49,3 +49,8 @@
   composición de la oferta, precio, estancia mínima y cobertura de reseñas. El
   notebook se ejecutó de principio a fin sin errores; los seis hashes, el validador
   SDD, los cuatro tests y `git diff --check` resultaron correctos.
+- 2026-09-02: se completó #13 con comparaciones de precio por tipo dentro de cada
+  ciudad, análisis de oferta y actividad por barrio y una selección reproducible de
+  segmentos con al menos 50 anuncios, actividad superior y precio no superior a la
+  referencia de su tipo y ciudad. Se documentaron anomalías, confusores y límites
+  causales; el notebook se ejecutó completo sin errores.

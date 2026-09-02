@@ -4,7 +4,7 @@ title: Análisis exploratorio esencial
 status: in-progress
 owner: desarrolladora del proyecto
 created: 2026-08-31
-updated: 2026-09-01
+updated: 2026-09-02
 ---
 
 # Especificación: análisis exploratorio esencial
@@ -126,7 +126,7 @@ si un resumen demuestra que una variable no aporta evidencia a las preguntas P1.
 ## Definition of Done
 
 - [x] La tarjeta #12 está completada, interpretada y publicada.
-- [ ] La tarjeta #13 está completada, interpretada y publicada.
+- [x] La tarjeta #13 está completada, interpretada y publicada.
 - [ ] La tarjeta #14 entrega el notebook consolidado y reproducible.
-- [ ] Las preguntas reformuladas y limitaciones están documentadas.
+- [x] Las preguntas reformuladas y limitaciones están documentadas.
 - [ ] Los datos originales conservan su integridad y todas las validaciones pasan.
