@@ -9,8 +9,8 @@
 Los seis CSV originales, el inventario técnico, el diccionario, la evaluación de
 calidad y las preguntas de negocio están validados. El notebook
 `notebooks/03_exploratory_analysis.ipynb` contiene los análisis univariante y
-relacional de #12 y #13, ejecutados sin errores. Solo permanece pendiente la
-consolidación final de #14.
+relacional de #12 y #13 y la consolidación final de #14. El artefacto completo se
+ejecuta de principio a fin sin errores.
 
 ## Enfoque propuesto
 
@@ -31,8 +31,8 @@ para #13:
 | `price` | ¿Cuál es el nivel, dispersión y asimetría del precio dentro de cada ciudad? | Mediana, cuartiles, histograma y vista de extremos |
 | `minimum_nights` | ¿Qué restricciones son habituales y cuáles son excepcionales? | Mediana, percentiles, bandas e histograma |
 | Variables de reseñas | ¿Qué cobertura y dispersión tienen antes de usarlas como proxy? | Ceros, ausencias, mediana y percentiles; relaciones en #13 |
-| `availability_365` (#13) | ¿Cómo se relaciona la disponibilidad publicada con los segmentos donde existe? | Resumen condicionado por ciudad y segmento |
-| Conteo de anuncios del anfitrión (#13) | ¿Qué indica su relación con la oferta sobre posible concentración? | Distribución y segmentos dentro de su cobertura |
+| `availability_365` (extensión opcional) | ¿Cómo se relaciona la disponibilidad publicada con los segmentos donde existe? | Pregunta P3 pendiente por su interpretación limitada y cobertura desigual |
+| Concentración por anfitrión (extensión opcional) | ¿Qué indica su relación con la oferta sobre posible concentración? | Pregunta P2 pendiente; una cuenta no equivale necesariamente a una persona |
 
 Los histogramas mostrarán forma; los boxplots se utilizarán solo cuando aporten una
 comparación de dispersión. Los gráficos categóricos usarán barras, y las tablas se

@@ -28,7 +28,7 @@
   Cubre REQ-005, REQ-009, REQ-010 / AC-004, AC-006, AC-007.
   - Dependencias: TASK-005.
   - Validación: cada relación responde una pregunta y separa asociación de causalidad.
-- [ ] **TASK-007** — Consolidar narrativa, gráficos, insights y reproducibilidad para
+- [x] **TASK-007** — Consolidar narrativa, gráficos, insights y reproducibilidad para
   #14. Cubre REQ-001, REQ-006, REQ-007, REQ-011 / AC-001, AC-005, AC-008.
   - Dependencias: TASK-006.
   - Validación: ejecución completa sin errores ni outputs innecesarios y revisión humana.
@@ -43,8 +43,8 @@
   `room_type` y el resumen robusto de `price` por ciudad. Se añadió Matplotlib como
   dependencia directa para los gráficos del EDA; el notebook no contiene errores.
 - 2026-09-01: se evitó interpretar las reseñas como demanda aislada; #12 conserva
-  únicamente su cobertura y dispersión. Barrios, disponibilidad y concentración de
-  anfitriones pasan a #13, donde se analizarán en relación con ciudad y segmento.
+  únicamente su cobertura y dispersión. Los barrios pasan a #13; disponibilidad y
+  concentración por anfitrión permanecen como preguntas P2/P3 opcionales.
 - 2026-09-01: se completó #12 con 220.031 anuncios, preguntas e interpretaciones para
   composición de la oferta, precio, estancia mínima y cobertura de reseñas. El
   notebook se ejecutó de principio a fin sin errores; los seis hashes, el validador
@@ -54,3 +54,7 @@
   segmentos con al menos 50 anuncios, actividad superior y precio no superior a la
   referencia de su tipo y ciudad. Se documentaron anomalías, confusores y límites
   causales; el notebook se ejecutó completo sin errores.
+- 2026-09-03: se consolidó #14 con resumen ejecutivo, método, respuesta final y
+  preguntas sin resolver. Se eliminaron una comprobación descartada y una celda
+  vacía, se corrigieron referencias temporales y el notebook completo volvió a
+  ejecutarse sin errores ni celdas pendientes.

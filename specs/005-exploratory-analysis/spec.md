@@ -1,10 +1,10 @@
 ---
 id: 005
 title: Análisis exploratorio esencial
-status: in-progress
+status: done
 owner: desarrolladora del proyecto
 created: 2026-08-31
-updated: 2026-09-02
+updated: 2026-09-03
 ---
 
 # Especificación: análisis exploratorio esencial
@@ -95,9 +95,10 @@ como las correcciones de datos no justificadas.
   `number_of_reviews` y `reviews_per_month` se resumirán únicamente para evaluar su
   cobertura y dispersión; su utilidad para negocio se estudiará en #13 al
   relacionarlas con los segmentos de oferta.
-- `availability_365` y `calculated_host_listings_count` se analizarán en #13,
-  únicamente en las ciudades donde existen, porque aisladas no representan demanda,
-  ocupación ni concentración efectiva.
+- `availability_365` y la concentración por anfitrión permanecen como preguntas P2/P3
+  sin resolver. Tras priorizar la pregunta principal, se reservan para una extensión
+  opcional porque no son necesarias para cerrar el EDA esencial y aisladas no
+  representan demanda, ocupación ni concentración efectiva.
 - Las categóricas principales de #12 son ciudad y `room_type`. Debido a su alta
   cardinalidad y distinta granularidad, `neighbourhood` se analizará en #13 dentro
   de cada ciudad y con un denominador explícito.
@@ -120,13 +121,15 @@ como las correcciones de datos no justificadas.
 
 ## Preguntas abiertas
 
-No existen decisiones que bloqueen el checkpoint #12. La selección podrá reducirse
-si un resumen demuestra que una variable no aporta evidencia a las preguntas P1.
+No existen decisiones que bloqueen el cierre del EDA esencial. La concentración por
+anfitrión y la relación de `availability_365` con los segmentos quedan documentadas
+como extensiones opcionales P2/P3. También requieren datos adicionales las preguntas
+sobre demanda, ocupación, reservas, ingresos, moneda y evolución temporal.
 
 ## Definition of Done
 
 - [x] La tarjeta #12 está completada, interpretada y publicada.
 - [x] La tarjeta #13 está completada, interpretada y publicada.
-- [ ] La tarjeta #14 entrega el notebook consolidado y reproducible.
+- [x] La tarjeta #14 entrega el notebook consolidado y reproducible.
 - [x] Las preguntas reformuladas y limitaciones están documentadas.
-- [ ] Los datos originales conservan su integridad y todas las validaciones pasan.
+- [x] Los datos originales conservan su integridad y todas las validaciones pasan.

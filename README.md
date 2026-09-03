@@ -75,12 +75,14 @@ automáticamente todos sus niveles opcionales en requisitos aprobados, en
 | [`specs/003-data-understanding/spec.md`](specs/003-data-understanding/spec.md) | Diccionario y evaluación inicial de calidad |
 | [`specs/004-eda/spec.md`](specs/004-eda/spec.md) | Preguntas de negocio para orientar el EDA |
 | [`specs/005-exploratory-analysis/spec.md`](specs/005-exploratory-analysis/spec.md) | Ejecución del EDA esencial y notebook consolidado |
+| [`notebooks/03_exploratory_analysis.ipynb`](notebooks/03_exploratory_analysis.ipynb) | EDA esencial ejecutado, interpretado y consolidado |
 | [`AGENTS.md`](AGENTS.md) | Reglas educativas y operativas del repositorio |
 
 ## 📍 Estado actual
 
 La infraestructura SDD, el entorno reproducible, el inventario técnico, el
 diccionario de variables, la evaluación inicial de calidad y las preguntas de
-negocio del EDA están definidos. La fase actual ejecutará el EDA esencial mediante
-tres checkpoints: análisis univariante, relaciones y segmentos, y consolidación del
-notebook. Las preguntas podrán reformularse cuando aparezca nueva evidencia.
+negocio están validados. El EDA esencial está completado mediante tres checkpoints:
+análisis univariante, relaciones y segmentos, y consolidación del notebook. Las
+preguntas sobre disponibilidad y concentración por anfitrión permanecen como
+extensiones opcionales.
