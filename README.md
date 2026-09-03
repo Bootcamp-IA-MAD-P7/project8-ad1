@@ -64,6 +64,49 @@ Las instrucciones entregadas originalmente se conservan, sin convertir
 automáticamente todos sus niveles opcionales en requisitos aprobados, en
 [`docs/project-brief.md`](docs/project-brief.md).
 
+## 🗂️ Estructura del repositorio
+
+```text
+project-ai-data-analyst/
+├── data/           # Datos originales y manifiesto de integridad
+├── docs/           # Brief, diccionario y preguntas de negocio
+├── notebooks/      # Inventario, comprensión de datos y EDA consolidado
+├── scripts/        # Validación automática de especificaciones
+├── specs/          # Requisitos, planes, tareas y decisiones SDD
+├── tests/          # Tests del validador SDD
+└── requirements.txt
+```
+
+Los CSV originales se conservan en `data/raw/airbnb/`. Su procedencia, reglas de
+conservación y hashes están documentados en [`data/README.md`](data/README.md) y
+[`data/manifest.csv`](data/manifest.csv).
+
+## ▶️ Ejecutar el análisis
+
+Con el entorno virtual activado, JupyterLab se inicia con:
+
+```bash
+python -m jupyter lab
+```
+
+Los notebooks deben leerse y ejecutarse en este orden:
+
+1. `notebooks/01_data_inventory.ipynb`: inventario técnico.
+2. `notebooks/02_data_understanding.ipynb`: diccionario y calidad de los datos.
+3. `notebooks/03_exploratory_analysis.ipynb`: EDA e insights consolidados.
+
+Para comprobar su reproducibilidad sin utilizar la interfaz gráfica:
+
+```bash
+python -m jupyter nbconvert --execute --to notebook --inplace notebooks/01_data_inventory.ipynb --ExecutePreprocessor.timeout=600
+python -m jupyter nbconvert --execute --to notebook --inplace notebooks/02_data_understanding.ipynb --ExecutePreprocessor.timeout=600
+python -m jupyter nbconvert --execute --to notebook --inplace notebooks/03_exploratory_analysis.ipynb --ExecutePreprocessor.timeout=600
+```
+
+Los avisos de ZMQ sobre el bucle de eventos o el transporte local del kernel en
+Windows no representan fallos si la ejecución finaliza y `nbconvert` escribe el
+notebook sin outputs de error.
+
 ## 🗂️ Documentación
 
 | Documento | Responsabilidad |
@@ -75,6 +118,7 @@ automáticamente todos sus niveles opcionales en requisitos aprobados, en
 | [`specs/003-data-understanding/spec.md`](specs/003-data-understanding/spec.md) | Diccionario y evaluación inicial de calidad |
 | [`specs/004-eda/spec.md`](specs/004-eda/spec.md) | Preguntas de negocio para orientar el EDA |
 | [`specs/005-exploratory-analysis/spec.md`](specs/005-exploratory-analysis/spec.md) | Ejecución del EDA esencial y notebook consolidado |
+| [`specs/006-project-delivery/spec.md`](specs/006-project-delivery/spec.md) | Revisión técnica, presentación y demo final |
 | [`notebooks/03_exploratory_analysis.ipynb`](notebooks/03_exploratory_analysis.ipynb) | EDA esencial ejecutado, interpretado y consolidado |
 | [`AGENTS.md`](AGENTS.md) | Reglas educativas y operativas del repositorio |
 
