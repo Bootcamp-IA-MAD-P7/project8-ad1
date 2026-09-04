@@ -8,7 +8,9 @@ __pycache__/
 .ipynb_checkpoints/
 .env
 
+# Reproducible generated data
+/data/processed/*.csv
+
 # Operating systems and editors
 .DS_Store
 Thumbs.db
-
