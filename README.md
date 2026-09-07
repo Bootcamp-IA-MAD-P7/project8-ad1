@@ -68,10 +68,11 @@ automáticamente todos sus niveles opcionales en requisitos aprobados, en
 
 ```text
 project-ai-data-analyst/
-├── data/           # Datos originales y manifiesto de integridad
-├── docs/           # Brief, diccionario y preguntas de negocio
+├── dashboard/      # Dashboard de Power BI
+├── data/           # Datos originales, manifiesto y derivados reproducibles
+├── docs/           # Brief, diccionario, preguntas y diseño del dashboard
 ├── notebooks/      # Inventario, comprensión de datos y EDA consolidado
-├── scripts/        # Validación automática de especificaciones
+├── scripts/        # Validación SDD y preparación de la fuente del dashboard
 ├── specs/          # Requisitos, planes, tareas y decisiones SDD
 ├── tests/          # Tests del validador SDD
 └── requirements.txt
@@ -107,6 +108,28 @@ Los avisos de ZMQ sobre el bucle de eventos o el transporte local del kernel en
 Windows no representan fallos si la ejecución finaliza y `nbconvert` escribe el
 notebook sin outputs de error.
 
+## 📊 Abrir y reproducir el dashboard
+
+El dashboard se encuentra en
+[`dashboard/airbnb_offer_dashboard.pbix`](dashboard/airbnb_offer_dashboard.pbix) y
+se abre con Power BI Desktop. Contiene dos páginas:
+
+1. **Oferta y posicionamiento**: composición de la oferta, actividad aproximada por
+   barrio y segmentos seleccionados para investigación.
+2. **Calidad y restricciones**: precios no positivos, estancias mínimas llamativas e
+   inconsistencias en la frecuencia mensual de reseñas.
+
+La fuente derivada se regenera desde los seis CSV originales mediante:
+
+```bash
+python scripts/prepare_dashboard_data.py
+```
+
+El comando crea `data/processed/airbnb_dashboard.csv`, que está excluido de Git por
+ser un archivo generado. Los CSV se descargaron el 27 de agosto de 2026; la fecha de
+extracción del proveedor y las monedas no están documentadas. La actividad de reseñas
+es un indicador aproximado y no equivale a reservas, demanda u ocupación.
+
 ## 🗂️ Documentación
 
 | Documento | Responsabilidad |
@@ -119,7 +142,10 @@ notebook sin outputs de error.
 | [`specs/004-eda/spec.md`](specs/004-eda/spec.md) | Preguntas de negocio para orientar el EDA |
 | [`specs/005-exploratory-analysis/spec.md`](specs/005-exploratory-analysis/spec.md) | Ejecución del EDA esencial y notebook consolidado |
 | [`specs/006-project-delivery/spec.md`](specs/006-project-delivery/spec.md) | Revisión técnica, presentación y demo final |
+| [`specs/007-dashboard/spec.md`](specs/007-dashboard/spec.md) | Diseño, implementación y validación del dashboard |
 | [`notebooks/03_exploratory_analysis.ipynb`](notebooks/03_exploratory_analysis.ipynb) | EDA esencial ejecutado, interpretado y consolidado |
+| [`docs/dashboard-design.md`](docs/dashboard-design.md) | Audiencia, preguntas, KPIs y boceto del dashboard |
+| [`docs/dashboard-validation.md`](docs/dashboard-validation.md) | Reconciliación y revisión técnica del archivo de Power BI |
 | [`AGENTS.md`](AGENTS.md) | Reglas educativas y operativas del repositorio |
 
 ## 📍 Estado actual
@@ -129,4 +155,6 @@ diccionario de variables, la evaluación inicial de calidad y las preguntas de
 negocio están validados. El EDA esencial está completado mediante tres checkpoints:
 análisis univariante, relaciones y segmentos, y consolidación del notebook. Las
 preguntas sobre disponibilidad y concentración por anfitrión permanecen como
-extensiones opcionales.
+extensiones opcionales. El dashboard de Power BI está implementado y validado; la
+presentación y la demo final permanecen pendientes hasta cerrar los incrementos que
+se puedan completar dentro del calendario.

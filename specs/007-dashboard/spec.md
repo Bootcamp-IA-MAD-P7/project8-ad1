@@ -1,10 +1,10 @@
 ---
 id: 007
 title: Dashboard de priorización de la oferta
-status: in-progress
+status: done
 owner: desarrolladora del proyecto
 created: 2026-09-04
-updated: 2026-09-04
+updated: 2026-09-07
 ---
 
 # Especificación: dashboard de priorización de la oferta
@@ -53,10 +53,10 @@ no recomendar inversiones ni estimar rentabilidad.
   utilizará como detalle cuando aporte a la decisión.
 - **REQ-006**: cada métrica debe tener definición, población, unidad y cautela; el
   precio se expresará de forma relativa cuando se comparen ciudades.
-- **REQ-007**: el dashboard debe indicar las seis fuentes, que la fecha de extracción
+- **REQ-007**: el entregable debe indicar las seis fuentes, que la fecha de extracción
   no está disponible y que `reviews_per_month` es solo un indicador aproximado.
-- **REQ-008**: el archivo de Power BI, sus capturas y las comprobaciones contra el
-  notebook deben quedar identificados como evidencia reproducible.
+- **REQ-008**: el archivo de Power BI, su revisión estructural y las comprobaciones
+  contra el notebook deben quedar identificados como evidencia reproducible.
 
 ## Criterios de aceptación
 
@@ -73,8 +73,8 @@ no recomendar inversiones ni estimar rentabilidad.
   a tarjetas, gráficos y tablas, y existe navegación clara entre páginas.
 - **AC-006** (cubre REQ-006, REQ-007): títulos, unidades, fuentes y limitaciones evitan
   comparaciones entre monedas y afirmaciones sobre demanda, ocupación o rentabilidad.
-- **AC-007** (cubre REQ-008): el `.pbix`, las capturas y una lista breve de recorridos
-  probados permiten revisar la implementación.
+- **AC-007** (cubre REQ-008): el `.pbix`, una revisión de su estructura y una lista
+  breve de recorridos probados permiten revisar la implementación.
 
 ## Datos y supuestos
 
@@ -108,7 +108,7 @@ adicional en Dash solo se evaluarán después de completar la entrega obligatori
 
 ## Definition of Done
 
-- [ ] El diseño de #19 está documentado y aprobado por la desarrolladora.
-- [ ] El dashboard de #20 implementa el diseño con las métricas reconciliadas.
-- [ ] Fuentes, definiciones, limitaciones, recorridos y evidencias están documentados.
-- [ ] El validador SDD, los tests y el estado de Git son correctos.
+- [x] El diseño de #19 está documentado y aprobado por la desarrolladora.
+- [x] El dashboard de #20 implementa el diseño con las métricas reconciliadas.
+- [x] Fuentes, definiciones, limitaciones, recorridos y evidencias están documentados.
+- [x] El validador SDD y los tests son correctos; el `.pbix` queda listo para commit.

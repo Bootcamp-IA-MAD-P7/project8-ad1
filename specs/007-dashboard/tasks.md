@@ -8,18 +8,18 @@
   REQ-002, REQ-006 / AC-002, AC-003, AC-004.
   - Dependencias: TASK-001.
   - Validación: volumen, ciudades, indicadores y referencias coinciden con el EDA.
-- [ ] **TASK-003** — Implementar la página de oferta y posicionamiento. Cubre
+- [x] **TASK-003** — Implementar la página de oferta y posicionamiento. Cubre
   REQ-003, REQ-005, REQ-006 / AC-001, AC-003, AC-005, AC-006.
   - Dependencias: TASK-002.
   - Validación: KPIs, composición, barrios y tabla de candidatos responden sus preguntas.
-- [ ] **TASK-004** — Implementar la página de calidad y restricciones. Cubre
+- [x] **TASK-004** — Implementar la página de calidad y restricciones. Cubre
   REQ-004, REQ-005, REQ-006 / AC-001, AC-004, AC-005, AC-006.
   - Dependencias: TASK-002.
   - Validación: tarjetas, gráfico por ciudad y detalle de anomalías están reconciliados.
-- [ ] **TASK-005** — Probar, documentar y capturar el dashboard. Cubre REQ-007,
+- [x] **TASK-005** — Probar y documentar el dashboard. Cubre REQ-007,
   REQ-008 / AC-005, AC-006, AC-007.
   - Dependencias: TASK-003, TASK-004.
-  - Validación: `.pbix`, capturas, recorridos, README, SDD y tests revisados.
+  - Validación: `.pbix`, estructura, recorridos, README, SDD y tests revisados.
 
 ## Registro de progreso
 
@@ -31,3 +31,9 @@
   reproduce los controles del EDA: 50 precios no positivos, 20 estancias mínimas de
   al menos 1000 noches y 123 anuncios con reseñas sin frecuencia mensual. La fuente
   selecciona 30 segmentos, hasta cinco por ciudad.
+- 2026-09-07: el archivo `airbnb_offer_dashboard.pbix` queda implementado con dos
+  páginas, 20 objetos visuales, filtros sincronizados, navegación, cautelas y una
+  interacción específica que evita aplicar el filtro de tipo al resumen por barrio.
+  La desarrolladora confirma el orden coherente de las dimensiones y que los campos
+  de detalle no se resumen. La fuente y el período se documentan fuera del lienzo para
+  conservar una visualización despejada. La presentación y la demo permanecen en #16.
