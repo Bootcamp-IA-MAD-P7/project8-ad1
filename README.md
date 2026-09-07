@@ -68,14 +68,16 @@ automáticamente todos sus niveles opcionales en requisitos aprobados, en
 
 ```text
 project-ai-data-analyst/
-├── dashboard/      # Dashboard de Power BI
+├── dashboard/      # Dashboard de Power BI y aplicación web Dash
 ├── data/           # Datos originales, manifiesto y derivados reproducibles
 ├── docs/           # Brief, diccionario, preguntas y diseño del dashboard
 ├── notebooks/      # Inventario, comprensión de datos y EDA consolidado
 ├── scripts/        # Validación SDD y preparación de la fuente del dashboard
 ├── specs/          # Requisitos, planes, tareas y decisiones SDD
 ├── tests/          # Tests del validador SDD
-└── requirements.txt
+├── requirements.txt
+├── requirements-dashboard.txt
+└── Dockerfile
 ```
 
 Los CSV originales se conservan en `data/raw/airbnb/`. Su procedencia, reglas de
@@ -132,6 +134,58 @@ ser un archivo generado. Los CSV se descargaron el 27 de agosto de 2026; la fech
 extracción del proveedor y las monedas no están documentadas. La actividad de reseñas
 es un indicador aproximado y no equivale a reservas, demanda u ocupación.
 
+### Versión web con Dash
+
+La versión web portable reutiliza la misma preparación validada y conserva las áreas
+de **oferta y posicionamiento** y **calidad y restricciones**. Con el entorno virtual
+activo se inicia mediante:
+
+```bash
+python dashboard/dash_app.py
+```
+
+La aplicación queda disponible en `http://localhost:8050`. Los datos se cargan una
+vez al iniciar el proceso; si cambia alguno de los CSV, es necesario reiniciarlo.
+
+### Ejecutar el dashboard con Docker
+
+Requisito: Docker Desktop debe estar iniciado. Desde la raíz del repositorio:
+
+```bash
+docker build -t airbnb-offer-dashboard:local .
+docker run --detach --name airbnb-offer-dashboard -p 8050:8050 airbnb-offer-dashboard:local
+```
+
+La primera orden construye la imagen. La segunda inicia el contenedor en segundo
+plano y publica el dashboard en `http://localhost:8050`. Su estado y la reconciliación
+básica pueden comprobarse con:
+
+```bash
+docker ps --filter name=airbnb-offer-dashboard
+curl http://localhost:8050/health
+docker logs --tail 50 airbnb-offer-dashboard
+```
+
+La comprobación de salud debe devolver `status: ok`, seis ciudades y 220.031
+anuncios. Para detenerlo y volver a iniciarlo sin crear otro contenedor:
+
+```bash
+docker stop airbnb-offer-dashboard
+docker start airbnb-offer-dashboard
+```
+
+Cuando ya no se necesite ese contenedor, se puede eliminar después de detenerlo:
+
+```bash
+docker rm airbnb-offer-dashboard
+```
+
+La imagen utiliza Gunicorn con un único trabajador para no duplicar en memoria el
+DataFrame de 220.031 filas. Se ejecuta con un usuario sin privilegios y solo incorpora
+la aplicación, las dependencias web, la preparación compartida y los seis CSV
+originales. `.dockerignore` excluye el entorno virtual, Git, secretos locales,
+notebooks, tests, el archivo `.pbix` y datos procesados.
+
 ## 🗂️ Documentación
 
 | Documento | Responsabilidad |
@@ -146,6 +200,7 @@ es un indicador aproximado y no equivale a reservas, demanda u ocupación.
 | [`specs/006-project-delivery/spec.md`](specs/006-project-delivery/spec.md) | Revisión técnica, presentación y demo final |
 | [`specs/007-dashboard/spec.md`](specs/007-dashboard/spec.md) | Diseño, implementación y validación del dashboard |
 | [`specs/008-statistical-analysis/spec.md`](specs/008-statistical-analysis/spec.md) | Hipótesis y métodos para el contraste estadístico |
+| [`specs/009-dash-docker/spec.md`](specs/009-dash-docker/spec.md) | Versión web portable del dashboard con Dash y Docker |
 | [`notebooks/03_exploratory_analysis.ipynb`](notebooks/03_exploratory_analysis.ipynb) | EDA esencial ejecutado, interpretado y consolidado |
 | [`notebooks/04_statistical_analysis.ipynb`](notebooks/04_statistical_analysis.ipynb) | Contrastes estadísticos ejecutados e interpretados |
 | [`docs/dashboard-design.md`](docs/dashboard-design.md) | Audiencia, preguntas, KPIs y boceto del dashboard |
@@ -162,5 +217,7 @@ preguntas sobre disponibilidad y concentración por anfitrión permanecen como
 extensiones opcionales. El dashboard de Power BI está implementado y validado. El
 análisis estadístico identifica una asociación pequeña entre ciudad y tipo de
 alojamiento y menor actividad aproximada en estancias superiores a ocho noches en
-las seis ciudades. La presentación y la demo final permanecen pendientes hasta cerrar
-los incrementos que se puedan completar dentro del calendario.
+las seis ciudades. Además, el dashboard dispone de una versión web reproducible con
+Dash y Docker, validada localmente con un contenedor saludable. La presentación y la
+demo final permanecen pendientes hasta cerrar los incrementos que se puedan completar
+dentro del calendario.

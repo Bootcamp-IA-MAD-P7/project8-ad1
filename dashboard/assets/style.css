@@ -1,0 +1,351 @@
+:root {
+    --rausch: #ff385c;
+    --rausch-dark: #e00b41;
+    --ink: #222222;
+    --muted: #717171;
+    --line: #dddddd;
+    --surface: #ffffff;
+    --canvas: #ffffff;
+    --soft: #f7f7f7;
+    --soft-rausch: #fff5f7;
+    --radius: 20px;
+    --shadow: 0 6px 24px rgba(0, 0, 0, 0.10);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--canvas);
+    color: var(--ink);
+    font-family: "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.app-shell {
+    min-height: 100vh;
+}
+
+.hero {
+    padding: 30px max(5vw, 24px) 38px;
+    color: var(--ink);
+    background: var(--surface);
+    border-bottom: 1px solid #ebebeb;
+}
+
+.hero h1 {
+    max-width: 940px;
+    margin: 22px 0 12px;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 1.05;
+}
+
+.hero-top {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+}
+
+.brand-mark {
+    display: grid;
+    width: 44px;
+    height: 44px;
+    place-items: center;
+    color: white;
+    background: var(--rausch);
+    border-radius: 50%;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+}
+
+.eyebrow {
+    margin: 0;
+    color: var(--rausch-dark);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.11em;
+}
+
+.header-copy {
+    max-width: 760px;
+    margin: 0;
+    color: var(--muted);
+    font-size: 1.03rem;
+    line-height: 1.55;
+}
+
+.content {
+    width: min(1460px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 26px 0 24px;
+}
+
+.filter-panel {
+    display: grid;
+    grid-template-columns: minmax(240px, 1fr) minmax(280px, 1fr) minmax(320px, 1.35fr);
+    gap: 18px;
+    align-items: end;
+    margin: 0 0 28px;
+    padding: 14px 18px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 32px;
+    box-shadow: var(--shadow);
+}
+
+.filter-field label {
+    display: block;
+    margin: 0 0 8px;
+    color: var(--ink);
+    font-size: 0.82rem;
+    font-weight: 750;
+}
+
+.filter-field .Select-control,
+.filter-field .dash-dropdown {
+    min-height: 42px;
+}
+
+.selection-summary {
+    margin: 0;
+    padding: 11px 13px;
+    color: var(--ink);
+    background: var(--soft-rausch);
+    border-left: 4px solid var(--rausch);
+    border-radius: 12px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.dashboard-tabs {
+    overflow: hidden;
+    padding: 8px;
+    background: var(--soft);
+    border: 1px solid #ebebeb;
+    border-radius: var(--radius);
+}
+
+.dashboard-tab {
+    padding: 14px !important;
+    color: var(--muted) !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 14px !important;
+    font-weight: 700 !important;
+}
+
+.dashboard-tab--selected {
+    color: var(--ink) !important;
+    background: var(--surface) !important;
+    border: 1px solid var(--line) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08) !important;
+}
+
+.tab-content {
+    padding: 32px 18px 18px;
+    background: var(--surface);
+    border-radius: var(--radius);
+}
+
+.section-heading {
+    display: flex;
+    gap: 28px;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.section-heading h2 {
+    margin: 0;
+    color: var(--ink);
+    font-size: 1.45rem;
+    letter-spacing: -0.015em;
+}
+
+.section-heading p {
+    max-width: 650px;
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.5;
+}
+
+.metric-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+.metric-card {
+    position: relative;
+    min-height: 142px;
+    padding: 22px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.06);
+}
+
+.metric-card::before {
+    display: block;
+    width: 34px;
+    height: 4px;
+    margin-bottom: 16px;
+    background: var(--rausch);
+    border-radius: 99px;
+    content: "";
+}
+
+.metric-label,
+.metric-note {
+    margin: 0;
+    color: var(--muted);
+}
+
+.metric-label {
+    font-size: 0.82rem;
+    font-weight: 750;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+}
+
+.metric-value {
+    margin: 9px 0 5px;
+    color: var(--ink);
+    font-size: 2rem;
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+}
+
+.metric-note {
+    font-size: 0.82rem;
+    line-height: 1.35;
+}
+
+.chart-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 18px;
+}
+
+.chart-grid > div,
+.table-card {
+    overflow: hidden;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.05);
+}
+
+.table-card {
+    padding: 22px;
+}
+
+.table-heading {
+    display: flex;
+    gap: 25px;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.table-heading h3 {
+    margin: 0;
+    color: var(--ink);
+    font-size: 1.06rem;
+}
+
+.table-description {
+    max-width: 720px;
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.87rem;
+    line-height: 1.45;
+}
+
+.caveat {
+    margin: 17px 0 0;
+    padding: 12px 14px;
+    color: #6f1935;
+    background: var(--soft-rausch);
+    border-left: 4px solid var(--rausch);
+    border-radius: 12px;
+    font-size: 0.85rem;
+    line-height: 1.45;
+}
+
+.footer {
+    width: 100%;
+    margin: 0;
+    padding: 28px max(5vw, 24px);
+    color: var(--muted);
+    background: var(--soft);
+    border-top: 1px solid #ebebeb;
+    font-size: 0.78rem;
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    .filter-panel {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .selection-summary {
+        grid-column: 1 / -1;
+    }
+
+    .chart-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .hero {
+        padding: 25px 20px 30px;
+    }
+
+    .content {
+        width: min(100% - 24px, 1460px);
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .filter-panel,
+    .metric-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-panel {
+        border-radius: var(--radius);
+    }
+
+    .selection-summary {
+        grid-column: auto;
+    }
+
+    .tab-content {
+        padding: 17px;
+    }
+
+    .section-heading,
+    .table-heading {
+        display: block;
+    }
+
+    .section-heading p,
+    .table-description {
+        margin-top: 9px;
+    }
+
+    .dashboard-tab {
+        padding: 12px 8px !important;
+        font-size: 0.82rem !important;
+    }
+}
