@@ -44,7 +44,7 @@ dependencias principales están disponibles:
 ```bash
 which python
 python --version
-python -c "import pandas, jupyterlab, notebook; print('pandas', pandas.__version__); print('jupyterlab', jupyterlab.__version__); print('notebook', notebook.__version__)"
+python -c "import pandas, scipy, jupyterlab, notebook; print('pandas', pandas.__version__); print('scipy', scipy.__version__); print('jupyterlab', jupyterlab.__version__); print('notebook', notebook.__version__)"
 ```
 
 `which python` debe apuntar a `.venv/Scripts/python` y la versión debe ser
@@ -95,6 +95,7 @@ Los notebooks deben leerse y ejecutarse en este orden:
 1. `notebooks/01_data_inventory.ipynb`: inventario técnico.
 2. `notebooks/02_data_understanding.ipynb`: diccionario y calidad de los datos.
 3. `notebooks/03_exploratory_analysis.ipynb`: EDA e insights consolidados.
+4. `notebooks/04_statistical_analysis.ipynb`: hipótesis, supuestos y tamaños del efecto.
 
 Para comprobar su reproducibilidad sin utilizar la interfaz gráfica:
 
@@ -102,6 +103,7 @@ Para comprobar su reproducibilidad sin utilizar la interfaz gráfica:
 python -m jupyter nbconvert --execute --to notebook --inplace notebooks/01_data_inventory.ipynb --ExecutePreprocessor.timeout=600
 python -m jupyter nbconvert --execute --to notebook --inplace notebooks/02_data_understanding.ipynb --ExecutePreprocessor.timeout=600
 python -m jupyter nbconvert --execute --to notebook --inplace notebooks/03_exploratory_analysis.ipynb --ExecutePreprocessor.timeout=600
+python -m jupyter nbconvert --execute --to notebook --inplace notebooks/04_statistical_analysis.ipynb --ExecutePreprocessor.timeout=600
 ```
 
 Los avisos de ZMQ sobre el bucle de eventos o el transporte local del kernel en
@@ -143,7 +145,9 @@ es un indicador aproximado y no equivale a reservas, demanda u ocupación.
 | [`specs/005-exploratory-analysis/spec.md`](specs/005-exploratory-analysis/spec.md) | Ejecución del EDA esencial y notebook consolidado |
 | [`specs/006-project-delivery/spec.md`](specs/006-project-delivery/spec.md) | Revisión técnica, presentación y demo final |
 | [`specs/007-dashboard/spec.md`](specs/007-dashboard/spec.md) | Diseño, implementación y validación del dashboard |
+| [`specs/008-statistical-analysis/spec.md`](specs/008-statistical-analysis/spec.md) | Hipótesis y métodos para el contraste estadístico |
 | [`notebooks/03_exploratory_analysis.ipynb`](notebooks/03_exploratory_analysis.ipynb) | EDA esencial ejecutado, interpretado y consolidado |
+| [`notebooks/04_statistical_analysis.ipynb`](notebooks/04_statistical_analysis.ipynb) | Contrastes estadísticos ejecutados e interpretados |
 | [`docs/dashboard-design.md`](docs/dashboard-design.md) | Audiencia, preguntas, KPIs y boceto del dashboard |
 | [`docs/dashboard-validation.md`](docs/dashboard-validation.md) | Reconciliación y revisión técnica del archivo de Power BI |
 | [`AGENTS.md`](AGENTS.md) | Reglas educativas y operativas del repositorio |
@@ -155,6 +159,8 @@ diccionario de variables, la evaluación inicial de calidad y las preguntas de
 negocio están validados. El EDA esencial está completado mediante tres checkpoints:
 análisis univariante, relaciones y segmentos, y consolidación del notebook. Las
 preguntas sobre disponibilidad y concentración por anfitrión permanecen como
-extensiones opcionales. El dashboard de Power BI está implementado y validado; la
-presentación y la demo final permanecen pendientes hasta cerrar los incrementos que
-se puedan completar dentro del calendario.
+extensiones opcionales. El dashboard de Power BI está implementado y validado. El
+análisis estadístico identifica una asociación pequeña entre ciudad y tipo de
+alojamiento y menor actividad aproximada en estancias superiores a ocho noches en
+las seis ciudades. La presentación y la demo final permanecen pendientes hasta cerrar
+los incrementos que se puedan completar dentro del calendario.
