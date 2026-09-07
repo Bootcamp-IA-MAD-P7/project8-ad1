@@ -1,7 +1,5 @@
 # 🚀 PROYECTO DATA ANALYST: Análisis y visualización de datos
 
-![DataAnalyst](https://github.com/user-attachments/assets/f9a0c97d-856b-4b33-b448-c20f0deb2979)
-
 ## 🧭 Forma de trabajo: Spec Driven Development
 
 El proyecto avanza mediante incrementos pequeños definidos antes de su
