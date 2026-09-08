@@ -39,3 +39,15 @@ el despliegue real.
 - Solicitar intervención si Render requiere inicio de sesión o autorización de GitHub.
 - No continuar si la única opción visible requiere pago.
 - Si la memoria gratuita es insuficiente, medir y optimizar antes de proponer gasto.
+
+## Resultado del despliegue
+
+- Plataforma: Render Web Service, runtime Docker y plan gratuito.
+- URL: `https://project8-airbnb-dashboard.onrender.com`.
+- Salud: `/health` devuelve `status: ok`, seis ciudades y 220.031 anuncios.
+- Recorrido global: carga 220.031 anuncios, 75,35 % con reseñas y 30 segmentos.
+- Filtro Madrid: devuelve 19.618 anuncios y cinco segmentos destacados.
+- Navegación: las áreas de oferta y calidad cargan y conservan los filtros.
+- Estado vacío: Tokio y habitación de hotel devuelve cero anuncios sin error.
+- Versión inicial desplegada: commit `86b6a1e` de la rama
+  `feat/010-public-deployment`.

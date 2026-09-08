@@ -184,6 +184,25 @@ la aplicación, las dependencias web, la preparación compartida y los seis CSV
 originales. `.dockerignore` excluye el entorno virtual, Git, secretos locales,
 notebooks, tests, el archivo `.pbix` y datos procesados.
 
+### Dashboard público en Render
+
+La versión desplegada está disponible en:
+
+> **[Abrir el dashboard público](https://project8-airbnb-dashboard.onrender.com)**
+
+Render construye el `Dockerfile` mediante el Blueprint versionado en `render.yaml` y
+comprueba la ruta [`/health`](https://project8-airbnb-dashboard.onrender.com/health).
+El servicio está conectado a la rama `feat/010-public-deployment`; para publicar un
+cambio se debe hacer commit y push en esa rama, esperar a que finalice la nueva
+construcción y volver a validar la página principal y el endpoint de salud.
+
+Se utiliza el plan gratuito, sin base de datos, disco persistente ni variables
+secretas. Este plan puede suspender la instancia después de un periodo sin tráfico,
+por lo que la primera visita puede tardar 50 segundos o más. Sus recursos son
+limitados y no ofrecen disponibilidad de producción. Para una demo conviene abrir la
+URL con antelación. Los datos forman parte de la imagen y no se actualizan solos: un
+cambio en los CSV requiere un nuevo despliegue.
+
 ## 🗂️ Documentación
 
 | Documento | Responsabilidad |
@@ -217,6 +236,6 @@ extensiones opcionales. El dashboard de Power BI está implementado y validado. 
 análisis estadístico identifica una asociación pequeña entre ciudad y tipo de
 alojamiento y menor actividad aproximada en estancias superiores a ocho noches en
 las seis ciudades. Además, el dashboard dispone de una versión web reproducible con
-Dash y Docker, validada localmente con un contenedor saludable. La presentación y la
-demo final permanecen pendientes hasta cerrar los incrementos que se puedan completar
-dentro del calendario.
+Dash y Docker, validada localmente y desplegada públicamente en Render. La
+presentación y la demo final permanecen pendientes hasta cerrar los incrementos que
+se puedan completar dentro del calendario.

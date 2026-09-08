@@ -1,7 +1,7 @@
 ---
 id: 010
 title: Despliegue público del dashboard Dash
-status: approved
+status: done
 owner: desarrolladora del proyecto
 created: 2026-09-08
 updated: 2026-09-08
@@ -121,13 +121,13 @@ para conservar la relación entre código y versión desplegada.
 
 ## Preguntas abiertas
 
-La única acción externa prevista es autorizar a Render para leer el repositorio o
-indicar su URL pública. No se autoriza seleccionar un plan de pago.
+No quedan preguntas que bloqueen este incremento. El servicio utiliza la URL pública
+del repositorio y el plan gratuito; no se seleccionó ningún recurso de pago.
 
 ## Definition of Done
 
-- [ ] `render.yaml` está versionado y coincide con Docker.
-- [ ] El servicio público está activo y saludable.
-- [ ] Los recorridos principales se validan desde la URL pública.
-- [ ] README y la tarjeta #27 documentan evidencia y limitaciones.
-- [ ] Tests, SDD y Git quedan validados y la rama publicada.
+- [x] `render.yaml` está versionado y coincide con Docker.
+- [x] El servicio público está activo y saludable.
+- [x] Los recorridos principales se validan desde la URL pública.
+- [x] README y la tarjeta #27 documentan evidencia y limitaciones.
+- [x] Tests, SDD y Git quedan validados y la rama publicada.
