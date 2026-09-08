@@ -199,6 +199,7 @@ notebooks, tests, el archivo `.pbix` y datos procesados.
 | [`specs/007-dashboard/spec.md`](specs/007-dashboard/spec.md) | Diseño, implementación y validación del dashboard |
 | [`specs/008-statistical-analysis/spec.md`](specs/008-statistical-analysis/spec.md) | Hipótesis y métodos para el contraste estadístico |
 | [`specs/009-dash-docker/spec.md`](specs/009-dash-docker/spec.md) | Versión web portable del dashboard con Dash y Docker |
+| [`specs/010-public-deployment/spec.md`](specs/010-public-deployment/spec.md) | Despliegue público reproducible del dashboard Dash |
 | [`notebooks/03_exploratory_analysis.ipynb`](notebooks/03_exploratory_analysis.ipynb) | EDA esencial ejecutado, interpretado y consolidado |
 | [`notebooks/04_statistical_analysis.ipynb`](notebooks/04_statistical_analysis.ipynb) | Contrastes estadísticos ejecutados e interpretados |
 | [`docs/dashboard-design.md`](docs/dashboard-design.md) | Audiencia, preguntas, KPIs y boceto del dashboard |

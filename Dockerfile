@@ -34,4 +34,4 @@ EXPOSE 8050
 HEALTHCHECK --interval=30s --timeout=5s --start-period=45s --retries=3 \
     CMD python -c "import os, urllib.request; urllib.request.urlopen('http://127.0.0.1:' + os.getenv('PORT', '8050') + '/health', timeout=4)"
 
-CMD ["sh", "-c", "exec gunicorn --bind 0.0.0.0:${PORT:-8050} --workers 1 --threads 4 --timeout 120 --access-logfile - dashboard.dash_app:server"]
+CMD ["sh", "-c", "exec gunicorn --bind 0.0.0.0:${PORT:-8050} --workers 1 --threads 4 --timeout 120 --no-control-socket --access-logfile - dashboard.dash_app:server"]

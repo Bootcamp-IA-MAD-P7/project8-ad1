@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: project8-airbnb-dashboard
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
