@@ -18,6 +18,9 @@
   REQ-006, REQ-007 / AC-005, AC-006.
   - Dependencias: dashboard obligatorio completado.
   - Validación: recorrido ensayado con enlaces y archivos funcionales.
+  - [x] Presentación editable de 10 diapositivas con notas y evidencia validada.
+  - [x] Guion, ruta de demo, contingencia y checklist documentados.
+  - [ ] Ensayo humano completo con fecha, duración e incidencias registradas.
 
 ## Registro de progreso
 
@@ -30,3 +33,7 @@
   contiene commits incrementales y descriptivos. Los notebooks 01, 02 y 03 se
   ejecutaron sin errores; se descartó únicamente el ruido de outputs regenerados en
   01 y 02 porque su código y Markdown no habían cambiado.
+- 2026-09-08: se genera y valida la presentación final en formato PowerPoint con
+  tres gráficos editables y capturas del dashboard público. El guion de demo fija
+  una duración objetivo de ocho minutos, respuestas a preguntas previsibles y un
+  plan de contingencia. TASK-005 permanece abierta hasta registrar el ensayo humano.

@@ -223,6 +223,8 @@ cambio en los CSV requiere un nuevo despliegue.
 | [`notebooks/04_statistical_analysis.ipynb`](notebooks/04_statistical_analysis.ipynb) | Contrastes estadísticos ejecutados e interpretados |
 | [`docs/dashboard-design.md`](docs/dashboard-design.md) | Audiencia, preguntas, KPIs y boceto del dashboard |
 | [`docs/dashboard-validation.md`](docs/dashboard-validation.md) | Reconciliación y revisión técnica del archivo de Power BI |
+| [`presentation/airbnb_offer_analysis_final.pptx`](presentation/airbnb_offer_analysis_final.pptx) | Presentación final editable con evidencia y notas del orador |
+| [`docs/final-demo-guide.md`](docs/final-demo-guide.md) | Guion, ruta de demo, contingencia y checklist de ensayo |
 | [`AGENTS.md`](AGENTS.md) | Reglas educativas y operativas del repositorio |
 
 ## 📍 Estado actual
@@ -237,5 +239,6 @@ análisis estadístico identifica una asociación pequeña entre ciudad y tipo d
 alojamiento y menor actividad aproximada en estancias superiores a ocho noches en
 las seis ciudades. Además, el dashboard dispone de una versión web reproducible con
 Dash y Docker, validada localmente y desplegada públicamente en Render. La
-presentación y la demo final permanecen pendientes hasta cerrar los incrementos que
-se puedan completar dentro del calendario.
+presentación final y el guion de demo ya están preparados con evidencia del EDA,
+los contrastes y el dashboard. Para cerrar la entrega queda realizar y registrar el
+ensayo humano completo.

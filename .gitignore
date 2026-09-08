@@ -11,6 +11,10 @@ __pycache__/
 # Reproducible generated data
 /data/processed/*.csv
 
+# Private presentation build artifacts
+/.presentation-build/
+/.chart-data-*/
+
 # Operating systems and editors
 .DS_Store
 Thumbs.db

@@ -4,7 +4,7 @@ title: Entrega técnica y comunicación final
 status: in-progress
 owner: desarrolladora del proyecto
 created: 2026-09-03
-updated: 2026-09-03
+updated: 2026-09-08
 ---
 
 # Especificación: entrega técnica y comunicación final
@@ -60,7 +60,7 @@ Las tarjetas #15 y #16 forman el cierre técnico y comunicativo del proyecto.
 
 ## Datos y supuestos
 
-- Los notebooks `01`, `02` y `03` y los seis CSV versionados son las fuentes locales
+- Los notebooks `01`, `02`, `03` y `04` y los seis CSV versionados son las fuentes locales
   reproducibles del análisis.
 - El dashboard se incorporará antes de cerrar la presentación y la demo de #16.
 - Los datos no incluyen moneda, fecha de extracción, reservas, ingresos ni ocupación.
@@ -75,8 +75,8 @@ Las tarjetas #15 y #16 forman el cierre técnico y comunicativo del proyecto.
 
 ## Preguntas abiertas
 
-No hay preguntas que bloqueen #15. El formato final de la presentación se decidirá
-al iniciar #16, después de disponer del dashboard.
+No hay preguntas abiertas que bloqueen la entrega. La presentación adopta formato
+PowerPoint 16:9 y utiliza el dashboard público como demostración principal.
 
 ## Definition of Done
 
