@@ -39,4 +39,3 @@ el despliegue real.
 - Solicitar intervención si Render requiere inicio de sesión o autorización de GitHub.
 - No continuar si la única opción visible requiere pago.
 - Si la memoria gratuita es insuficiente, medir y optimizar antes de proponer gasto.
-
