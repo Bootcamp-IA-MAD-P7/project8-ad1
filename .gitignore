@@ -7,8 +7,15 @@ __pycache__/
 # Notebooks and local configuration
 .ipynb_checkpoints/
 .env
+~$*.pptx
+
+# Reproducible generated data
+/data/processed/*.csv
+
+# Private presentation build artifacts
+/.presentation-build/
+/.chart-data-*/
 
 # Operating systems and editors
 .DS_Store
 Thumbs.db
-

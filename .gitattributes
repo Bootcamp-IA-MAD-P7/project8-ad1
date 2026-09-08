@@ -1,0 +1,2 @@
+# Preserve source CSV bytes and do not treat their meaningful trailing spaces as errors.
+data/raw/**/*.csv -whitespace
